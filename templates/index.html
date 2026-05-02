@@ -1,0 +1,14 @@
+<html>
+<head><title>Daily Reward Collector</title></head>
+<body>
+<h1>Daily Reward Collector</h1>
+<a href="/run">Run Collector</a>
+<h2>Recent Logs</h2>
+<ul>
+{% for log in logs %}
+<li>{{log[0]}} - {{log[1]}}</li>
+{% endfor %}
+</ul>
+<a href="/logs">View All Logs</a>
+</body>
+</html>
